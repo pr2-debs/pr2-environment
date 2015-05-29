@@ -1,0 +1,1254 @@
+pr2-environment (0.5.88-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1224
+   - r1224: Add rosget to pr2-environment.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 15 Aug 2013 14:18:36 -0700
+
+pr2-environment (0.5.87-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1154
+   - r1154: Add new LED and gripper FW versions.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 11 Apr 2013 13:46:48 -0700
+
+pr2-environment (0.5.86-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1142
+   - r1142: Update checkhome for new mount points.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Wed, 13 Mar 2013 12:25:57 -0700
+
+pr2-environment (0.5.85-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1133
+   - r1133: Add formatdisk script for robot-formatdisks.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 07 Mar 2013 15:29:11 -0800
+
+pr2-environment (0.5.84-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1127
+   - r1126: Update to debhelper v9
+   - r1127: Fix grub setup during installation.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 26 Feb 2013 17:43:55 -0800
+
+pr2-environment (0.5.83-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1092
+   - r1092: Push latest PR2 kernel.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Mon, 11 Feb 2013 10:31:05 -0800
+
+pr2-environment (0.5.82-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1089
+   - r1089: Remove outdated warnings from asound.conf
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 17 Jan 2013 17:39:32 -0800
+
+pr2-environment (0.5.81-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1067
+   - r1067: Fix ps3joy init script for catkin.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 20 Dec 2012 20:13:51 -0800
+
+pr2-environment (0.5.80-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1063
+   - r1062: No grub wait on fail.
+   - r1063: Update ucf grub config.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 11 Dec 2012 14:41:31 -0800
+
+pr2-environment (0.5.79-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1031
+   - r1031: make pr2-environment depend on wg-openvpn
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Wed, 05 Dec 2012 15:29:35 -0800
+
+pr2-environment (0.5.78-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1025
+   - r1025: Add dependency on grub2-common
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Wed, 05 Dec 2012 14:33:27 -0800
+
+pr2-environment (0.5.77-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1024
+   - r1024: Remove postinst hook to update-fstab
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Wed, 05 Dec 2012 13:50:29 -0800
+
+pr2-environment (0.5.76-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1020
+   - r1020: Add MD5sums for sudoers from precise.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Wed, 05 Dec 2012 13:36:07 -0800
+
+pr2-environment (0.5.75-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1016
+   - r1016: Remove old fstab entries.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Wed, 05 Dec 2012 11:17:24 -0800
+
+pr2-environment (0.5.74-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1014
+   - r1014: Remove dependency on fstab.d
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 04 Dec 2012 22:18:42 -0800
+
+pr2-environment (0.5.73-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1006
+   - r1006: Remove pr2-userdisk.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 04 Dec 2012 19:51:13 -0800
+
+pr2-environment (0.5.72-precise) stable; urgency=low
+
+  * Incrementing to SVN: r992
+   - r992: Add additional sudoers to pr2-environment.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 04 Dec 2012 13:48:55 -0800
+
+pr2-environment (0.5.71-precise) stable; urgency=low
+  
+  * Bump version number.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 04 Dec 2012 13:40:10 -0800
+
+pr2-environment (0.5.70-precise) stable; urgency=low
+
+  * Incrementing to SVN: r986
+   - r986: Pull changes from lucid
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 04 Dec 2012 13:16:27 -0800
+
+pr2-environment (0.5.69-precise) stable; urgency=low
+
+  * Incrementing to SVN: r914
+   - r900: updated to refer to 3.4.4 rt kernel.
+   - r914: fixing c2 booting, and now depends on pr2-kernel
+
+ -- Michael Brindle <mbrindle@willowgarage.com>  Tue, 07 Aug 2012 16:56:26 -0700
+
+pr2-environment (0.5.64-precise) stable; urgency=low
+
+  * Changed:
+    - pr2-environment/root/usr/share/grub/default/grub.pr2-environment
+    - pr2-environment/root/etc/default/grub.pr2-environment
+  * Incrementing to SVN: r893
+   - r893: installs precise
+
+ -- Michael Brindle <mbrindle@willowgarage.com>  Tue, 31 Jul 2012 11:59:11 -0700
+
+pr2-environment (0.5.63-precise) stable; urgency=low
+
+  * Changed:
+    - pr2-environment/debian/pr2-environment.postinst
+    - pr2-environment/debian/control
+
+ -- Michael Brindle <mbrindle@willowgarage.com>  Thu, 26 Jul 2012 10:33:10 -0700
+
+pr2-environment (0.5.62-precise) stable; urgency=low
+
+  * Changed:
+    - pr2-environment/debian/pr2-environment.postinst
+    - pr2-environment/debian/control
+
+ -- Michael Brindle <mbrindle@willowgarage.com>  Thu, 26 Jul 2012 10:01:24 -0700
+
+pr2-environment (0.5.61) stable; urgency=low
+
+  * Changed:
+    - pr2-environment/debian/control
+
+ -- Michael Brindle <mbrindle@willowgarage.com>  Wed, 25 Jul 2012 17:18:54 -0700
+
+pr2-environment (0.5.59-precise) stable; urgency=low
+
+  * Incrementing to SVN: r885
+   - r885: added precise support.
+
+ -- Michael Brindle <mbrindle@willowgarage.com>  Wed, 11 Jul 2012 16:26:21 -0700
+
+pr2-environment (0.5.57-precise) stable; urgency=low
+
+  * Incrementing to SVN: r835
+   - r835: Add dependency on gstreamer alsa drivers.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Fri, 03 Feb 2012 10:48:24 -0800
+
+pr2-environment (0.5.56-precise) stable; urgency=low
+
+  * Incrementing to SVN: r831
+   - r831: Fix configuration files managed by ucf.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Wed, 21 Dec 2011 18:49:40 -0800
+
+pr2-environment (0.5.55-precise) stable; urgency=low
+
+  * Incrementing to SVN: r827
+   - r827: Blacklist gspca_kinect module because it conflicts with openni.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 15 Dec 2011 14:31:58 -0800
+
+pr2-environment (0.5.54-precise) stable; urgency=low
+
+  * Incrementing to SVN: r820
+   - r820: Update to 3.0.6-rt17-pr2 kernel
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Fri, 09 Dec 2011 15:54:54 -0800
+
+pr2-environment (0.5.53-precise) stable; urgency=low
+
+  * Incrementing to SVN: r818
+   - r818: set up serial console on c1
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Wed, 30 Nov 2011 13:54:40 -0800
+
+pr2-environment (0.5.52-precise) stable; urgency=low
+
+  * Incrementing to SVN: r816
+   - r816: Update systemcheck for new hokuyo firmware.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 08 Nov 2011 15:06:04 -0800
+
+pr2-environment (0.5.51-precise) stable; urgency=low
+
+  * Incrementing to SVN: r811
+   - r811: Add new prosilica version.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Mon, 07 Nov 2011 11:52:22 -0800
+
+pr2-environment (0.5.50-precise) stable; urgency=low
+
+  * Incrementing to SVN: r808
+   - r808: Add plugs calibration file.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 30 Aug 2011 13:27:57 -0700
+
+pr2-environment (0.5.49-precise) stable; urgency=low
+
+  * Incrementing to SVN: r805
+   - r805: Create motor_heating_model directory on install.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 11 Aug 2011 10:40:01 -0700
+
+pr2-environment (0.5.48-precise) stable; urgency=low
+
+  * Incrementing to SVN: r788
+   - r788: Adding motor_heating_model directory
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Mon, 25 Jul 2011 11:05:17 -0700
+
+pr2-environment (0.5.47-precise) stable; urgency=low
+
+  * Incrementing to SVN: r693
+   - r693: Updating camera FW version, #68
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 11 Feb 2011 09:34:09 -0800
+
+pr2-environment (0.5.46-precise) stable; urgency=low
+
+  * Incrementing to SVN: r688
+   - r688: Check-ssh-keys needed executable bit
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 10 Feb 2011 22:40:26 -0800
+
+pr2-environment (0.5.45-precise) stable; urgency=low
+
+  * Incrementing to SVN: r682
+   - r665: Adding a deprecated check_ssh_keys call
+   - r677: Making checkdpkg.sh executable'
+   - r682: letting all users run pr2-systemcheck
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 10 Feb 2011 14:46:03 -0800
+
+pr2-environment (0.5.44-precise) stable; urgency=low
+
+  * Incrementing to SVN: r655
+   - r655: More creating of pr2-sysros
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 02 Feb 2011 14:31:15 -0800
+
+pr2-environment (0.5.43-precise) stable; urgency=low
+
+  * Incrementing to SVN: r597
+   - r597: Removing cpufreqd dep since it's not working with our given kernel anyways
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 12 Jan 2011 11:32:33 -0800
+
+pr2-environment (0.5.42-precise) stable; urgency=low
+
+  * Incrementing to SVN: r595
+   - r595: We now generate the proper initrd for c2 at boot
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 12 Jan 2011 10:45:28 -0800
+
+pr2-environment (0.5.41-precise) stable; urgency=low
+
+  * Incrementing to SVN: r591
+   - r590: Removing gratuituous devintf lines from /etc/modules
+   - r591: These diversion rules don't seem to be necessary and are also obnoxious
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 11 Jan 2011 19:27:10 -0800
+
+pr2-environment (0.5.40-precise) stable; urgency=low
+
+  * Incrementing to SVN: r587
+   - r587: unblacklisting the pcspkr
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 11 Jan 2011 18:57:26 -0800
+
+pr2-environment (0.5.39-precise) stable; urgency=low
+
+  * Incrementing to SVN: r578
+   - r578: Fix check HK firmware script
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 06 Jan 2011 14:05:39 -0800
+
+pr2-environment (0.5.38-precise) stable; urgency=low
+
+  * Incrementing to SVN: r575
+   - r575: Moving makesensorlinks to a upstart rule
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 05 Jan 2011 14:50:19 -0800
+
+pr2-environment (0.5.37-precise) stable; urgency=low
+
+  * Incrementing to SVN: r567
+   - r554: New version of check WGE100 script eliminates spewage. Uses a separate Python script to check cameras. #53
+   - r558: checkhome.sh now sends error messages to STDERR
+   - r564: Hokuyo firmware version check now prints errors messages to STDERR, with expected FW version
+   - r567: Adding dependency on pr2-webui
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 04 Jan 2011 11:57:56 -0800
+
+pr2-environment (0.5.36-precise) stable; urgency=low
+
+  * Incrementing to SVN: r536
+   - r536: Adding dependency on pr2-repo-pr2
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 23 Dec 2010 11:53:58 -0800
+
+pr2-environment (0.5.35-precise) stable; urgency=low
+
+  * Incrementing to SVN: r530
+   - r530: Moving pr2-environment to the pr2 component
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 23 Dec 2010 11:06:24 -0800
+
+pr2-environment (0.5.34-precise) stable; urgency=low
+
+  * Incrementing to SVN: r517
+   - r490: Adding PR2 systemcheck script to count the number of cores on a PR2 CPU. If CPU doesn't initialize properly, occasionally not all cores start up. WG-ROS-PKG 4931
+   - r514: Making pr2-environment essential
+   - r517: Making pr2-environment conflict with apparmor
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 22 Dec 2010 15:05:35 -0800
+
+pr2-environment (0.5.33-precise) stable; urgency=low
+
+  * Incrementing to SVN: r468
+   - r468: Call update-fstab manually
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 15 Dec 2010 21:28:44 -0800
+
+pr2-environment (0.5.32-precise) stable; urgency=low
+
+  * Incrementing to SVN: r462
+   - r462: Don't need to invoke dpkg-trigger now that we update on file modification
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 15 Dec 2010 20:40:58 -0800
+
+pr2-environment (0.5.31-precise) stable; urgency=low
+
+  * Incrementing to SVN: r458
+   - r458: Changeing the way update-fstab is trigger
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 15 Dec 2010 20:22:17 -0800
+
+pr2-environment (0.5.30-precise) stable; urgency=low
+
+  * Incrementing to SVN: r440
+   - r440: Fixing sudoers
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 03 Dec 2010 16:22:02 -0800
+
+pr2-environment (0.5.29-precise) stable; urgency=low
+
+  * Incrementing to SVN: r437
+   - r434: Add check that home is mounted via lvm
+   - r436: Put robot name and type on the parameter server
+   - r437: Move to /etc/ros/robot.yaml
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 01 Dec 2010 19:39:57 -0800
+
+pr2-environment (0.5.28-precise) stable; urgency=low
+
+  * Incrementing to SVN: r432
+   - r423: Moving lvm to /var
+   - r424: Spacing out our fstab rules
+   - r432: Add script to set tune2fs on all relavant drives
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 01 Dec 2010 17:43:10 -0800
+
+pr2-environment (0.5.27-precise) stable; urgency=low
+
+  * Incrementing to SVN: r419
+   - r419: Switching back to let fsck run
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 01 Dec 2010 13:02:26 -0800
+
+pr2-environment (0.5.26-precise) stable; urgency=low
+
+  * Incrementing to SVN: r418
+   - r418: Using fstab to disable fsck
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 01 Dec 2010 11:50:40 -0800
+
+pr2-environment (0.5.25-precise) stable; urgency=low
+
+  * Incrementing to SVN: r407
+   - r407: Motd now generated at login time
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 30 Nov 2010 16:54:33 -0800
+
+pr2-environment (0.5.24-precise) stable; urgency=low
+
+  * Incrementing to SVN: r404
+   - r404: Removing motd.pr2-environment
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 30 Nov 2010 16:23:05 -0800
+
+pr2-environment (0.5.23-precise) stable; urgency=low
+
+  * Incrementing to SVN: r401
+   - r401: Changing pr2-environment some more
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 30 Nov 2010 16:13:48 -0800
+
+pr2-environment (0.5.22-precise) stable; urgency=low
+
+  * Incrementing to SVN: r399
+   - r399: Moving over to using sudo to switch to ros user
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 30 Nov 2010 16:08:49 -0800
+
+pr2-environment (0.5.21-precise) stable; urgency=low
+
+  * Incrementing to SVN: r380
+   - r372: Adding ROS_MASTER_URI and ROBOT to the environment
+   - r373: Adding proper diversion rule for environment
+   - r380: Removing dependency on pr2-webui
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 29 Nov 2010 15:41:57 -0800
+
+pr2-environment (0.5.20-precise) stable; urgency=low
+
+  * Incrementing to SVN: r365
+   - r364: Don't wait for removable drive to boot
+   - r365: Fixing broken pr2-sudoers file
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 22 Nov 2010 20:59:02 -0800
+
+pr2-environment (0.5.19-precise) stable; urgency=low
+
+  * Incrementing to SVN: r359
+   - r356: Allowing easy_install
+   - r357: Removing check projector firmware https://code.ros.org/trac/wg-ros-pkg/ticket/4688
+   - r358: Add nvidia-smi to sudoers
+   - r359: Making removable mount at boot if there
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 22 Nov 2010 17:28:45 -0800
+
+pr2-environment (0.5.18-precise) stable; urgency=low
+
+  * Incrementing to SVN: r352
+   - r352: Upading READMEs
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 22 Nov 2010 16:33:32 -0800
+
+pr2-environment (0.5.17-precise) stable; urgency=low
+
+  * Incrementing to SVN: r334
+   - r332: Fastboot doesn't work anymore, so removing
+   - r333: Adding dependency on cpufreqd
+   - r334: Making sure the right kernel boots
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Sun, 21 Nov 2010 16:46:22 -0800
+
+pr2-environment (0.5.16-precise) stable; urgency=low
+
+  * Incrementing to SVN: r324
+   - r324: Updating ec-diag
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 16 Nov 2010 11:48:12 -0800
+
+pr2-environment (0.5.15-precise) stable; urgency=low
+
+  * Incrementing to SVN: r318
+   - r318: Look for camera on lan1
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Sun, 07 Nov 2010 17:55:34 -0800
+
+pr2-environment (0.5.14-precise) stable; urgency=low
+
+  * Incrementing to SVN: r316
+   - r316: Fixing error calculating size of home
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Sun, 07 Nov 2010 17:48:03 -0800
+
+pr2-environment (0.5.13-precise) stable; urgency=low
+
+  * Incrementing to SVN: r314
+   - r312: Adding sound related modules
+   - r313: Adding blacklist rules for bad wifi drivers
+   - r314: Adding dependency on pr2-netconsole
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Sun, 07 Nov 2010 17:32:39 -0800
+
+pr2-environment (0.5.12-precise) stable; urgency=low
+
+  * Incrementing to SVN: r291
+   - r285: Adding a location to use for ROS_HOME
+   - r286: move ROS_HOME for system processes into tmp
+   - r288: Changing ROS_HOME
+   - r290: Keeping fan message from spamming syslog
+   - r291: Adding dep on oss
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 26 Oct 2010 11:26:43 -0700
+
+pr2-environment (0.5.11-precise) stable; urgency=low
+
+  * Incrementing to SVN: r271
+   - r271: Get pr2-environment to use fstab.d
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 21 Oct 2010 17:39:18 -0700
+
+pr2-environment (0.5.10-precise) stable; urgency=low
+
+  * Incrementing to SVN: r259
+   - r259: Using the right location for sensor links
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 20 Oct 2010 16:56:48 -0700
+
+pr2-environment (0.5.9-precise) stable; urgency=low
+
+  * Incrementing to SVN: r257
+   - r257: Fixing diversion rules
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 20 Oct 2010 13:46:57 -0700
+
+pr2-environment (0.5.8-precise) stable; urgency=low
+
+  * Incrementing to SVN: r253
+   - r253: Changing pr2-environment dep to wg-openvpn
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 19 Oct 2010 12:27:20 -0700
+
+pr2-environment (0.5.7-precise) stable; urgency=low
+
+  * Incrementing to SVN: r247
+   - r243: look for check-ssh-keys in the right place
+   - r247: Merging pr2-environment-experimental (0.0.3 - r984-precise)
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 19 Oct 2010 11:48:51 -0700
+
+pr2-environment (0.5.6-precise) stable; urgency=low
+
+  * Incrementing to SVN: r241
+   - r241: We need to create diversion rules before updating grub
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 18 Oct 2010 18:35:45 -0700
+
+pr2-environment (0.5.5-precise) stable; urgency=low
+
+  * Incrementing to SVN: r232
+   - r209: Moving stuff out of pr2bin
+   - r210: removing pr2bin
+   - r211: making local/sbin
+   - r212: putting the useradd overirde in /usr/local/sbin to preserve original if people depend on it
+   - r214: Don't run pr2-usermigrate on c2
+   - r215: pr2bin overlay is gone
+   - r216: moving to new unionfs format
+   - r217: /etc/pr2 has been gone for a while
+   - r231: Updating unionfs layout
+   - r232: adding diversion rule for grub
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 18 Oct 2010 15:02:42 -0700
+
+pr2-environment (0.5.4-precise) stable; urgency=low
+
+  * Incrementing to SVN: r171
+   - r170: Adding messing ~ directory
+   - r171: Removing obsolete pr2 directory
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 14 Oct 2010 12:32:21 -0700
+
+pr2-environment (0.5.3-precise) stable; urgency=low
+
+  * Incrementing to SVN: r163
+   - r163: Moving explicit dependency on kernel
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 12 Oct 2010 18:03:24 -0700
+
+pr2-environment (0.5.2-precise) stable; urgency=low
+
+  * Incrementing to SVN: r160
+   - r160: Removing dep on pr2-eml
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 12 Oct 2010 17:49:28 -0700
+
+pr2-environment (0.5.1-precise) stable; urgency=low
+
+  * Incrementing to SVN: r156
+   - r156: moving pr2-pr2bin
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 12 Oct 2010 17:19:06 -0700
+
+pr2-environment (0.5.0-precise) stable; urgency=low
+
+  * Incrementing to SVN: r135
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 12 Oct 2010 15:16:07 -0700
+
+pr2-environment (0.2.28-precise) stable; urgency=low
+
+  * Incrementing to SVN: r996
+   - r948: Took out reference to ps3joy from the dhcpmon init.d file.
+   - r952: Added etc/bluetooth/main.conf.pr2-environment that had been forgotten in r856.
+   - r981: Check wge100 script now retries 3 times before reporting error for cameras missing. WG-ROS-PKG #4473
+   - r994: Making regex slightly more robust
+   - r995: Removing traces of dhcpmon
+   - r996: Removing traces of dhcpmon
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 26 Jul 2010 16:53:55 -0700
+
+pr2-environment (0.2.27-precise) stable; urgency=low
+
+  * Incrementing to SVN: r927
+   - r927: Passing ROBOT_START_LAUNCH_FILE through sudo
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 04 Jun 2010 16:24:08 -0700
+
+pr2-environment (0.2.26-precise) stable; urgency=low
+
+  * Incrementing to SVN: r907
+   - r903: Preserving environment variables for robot start
+   - r906: Pushing ros environment stuff through sudo
+   - r907: Reverting back to the right form again
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 02 Jun 2010 13:08:25 -0700
+
+pr2-environment (0.2.25-precise) stable; urgency=low
+
+  * Incrementing to SVN: r900
+   - r897: Adding check for CPU fan running in pr2-systemcheck. WG-ROS-PKG #4338
+   - r898: Battery check script now properly checks for battery server running. WG-ROS-PKG4338
+   - r899: Adding check for all interfaces UP in pr2-systemcheck. WG-ROS-PKG4354
+   - r900: Prosilica parameter whitelist update. WG-ROS-PKG #4312
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 21 May 2010 12:01:23 -0700
+
+pr2-environment (0.2.24-precise) stable; urgency=low
+
+  * Incrementing to SVN: r886
+   - r886: use new sendhwlog tool to send hwlogs
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 14 May 2010 14:32:28 -0700
+
+pr2-environment (0.2.23-precise) stable; urgency=low
+
+  * Incrementing to SVN: r874
+   - r874: Now only 1.16.01 is an acceptable hokuyo firmware version.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 12 May 2010 14:16:45 -0700
+
+pr2-environment (0.2.22-precise) stable; urgency=low
+
+  * Incrementing to SVN: r873
+   - r867: Added checking whether hokuyo_node is running, and whether getFirmwareVersion succeeded in the checkhokuyofirmware.sh systemcheck.
+   - r869: Added checksoundusb.sh
+   - r870: Removed FrameRate and SyncInLevels from prosilica check to fix wg#4293.
+   - r871: Took out more prosilica attributes (the ones starting with Stat according to Kevin in #4293-precise).
+   - r872: Had missed changes in get_prosilica_attribs.py in previous commit.
+   - r873: More ec-diag fixes from derek
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 12 May 2010 10:58:40 -0700
+
+pr2-environment (0.2.21-precise) stable; urgency=low
+
+  * Incrementing to SVN: r859
+   - r858: Added the --redirect-output option for ps3joy
+   - r859: #4280
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 05 May 2010 16:37:24 -0700
+
+pr2-environment (0.2.20-precise) stable; urgency=low
+
+  * Incrementing to SVN: r856
+   - r851: Checking in for ticket #4273
+   - r852: Checking in most recent copy of kevin's script
+   - r854: Added bluez-hcidump as a dependency for pr2-environment. Will make debugging joystick problems easier.
+   - r855: Added dependency on python-bluez >= 0.18
+   - r856: Added modified /etc/bluetooth/main.conf to prevent bluez from handling input devices.
+
+ -- Blaise Gassend <blaise@willowgarage.com>  Wed, 05 May 2010 13:44:50 -0700
+
+pr2-environment (0.2.19-precise) stable; urgency=low
+
+  * Incrementing to SVN: r846
+   - r846: Adding pr2-environment dependency on kernel
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 30 Apr 2010 16:28:17 -0700
+
+pr2-environment (0.2.18-precise) stable; urgency=low
+
+  * Incrementing to SVN: r834
+   - r834: Fixing checkprosilica script
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 28 Apr 2010 20:38:49 -0700
+
+pr2-environment (0.2.17-precise) stable; urgency=low
+
+  * Incrementing to SVN: r832
+   - r827: Added 1.16.01 to the list of up to date hokuyo versions. Removed useless check about pr2_etherCAT.
+   - r832: Adding new scripts to check prosilica
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 28 Apr 2010 20:28:27 -0700
+
+pr2-environment (0.2.16-precise) stable; urgency=low
+
+  * Incrementing to SVN: r816
+   - r798: Removing dhcpmon enable from pr2-environment
+   - r800: Added check for hokuyo firmware version.
+   - r805: Corrected message that gets printed when starting/stoping to use DESC instead of NAME.
+   - r815: Updating ec-diag for Derek
+   - r816: Adding script to check batteries
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 21 Apr 2010 19:48:17 -0700
+
+pr2-environment (0.2.15-precise) stable; urgency=low
+
+  * Incrementing to SVN: r779
+   - r779: willow connectivity not appropriate off our network
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 09 Apr 2010 13:56:09 -0700
+
+pr2-environment (0.2.14-precise) stable; urgency=low
+
+  * Incrementing to SVN: r770
+   - r770: Moving pr2-brand into pr2-wg-network
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 09 Apr 2010 11:43:03 -0700
+
+pr2-environment (0.2.13-precise) stable; urgency=low
+
+  * Incrementing to SVN: r769
+   - r769: Adding system check script for wrt610n version
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 08 Apr 2010 17:39:36 -0700
+
+pr2-environment (0.2.12-precise) stable; urgency=low
+
+  * Incrementing to SVN: r765
+   - r765: Updating the ethercat chain
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 07 Apr 2010 15:02:01 -0700
+
+pr2-environment (0.2.11-precise) stable; urgency=low
+
+  * Incrementing to SVN: r763
+   - r763: Adding ec-diag to pr2-systemcheck
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 05 Apr 2010 14:36:28 -0700
+
+pr2-environment (0.2.10-precise) stable; urgency=low
+
+  * Incrementing to SVN: r754
+   - r754: Keeping pr2admin from having a login at first
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 01 Apr 2010 21:47:21 -0700
+
+pr2-environment (0.2.9-precise) stable; urgency=low
+
+  * Incrementing to SVN: r746
+   - r746: Fixing all the update-rc.d invocations
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 01 Apr 2010 14:48:09 -0700
+
+pr2-environment (0.2.8-precise) stable; urgency=low
+
+  * Incrementing to SVN: r744
+   - r744: Removing rc links and re-adding so we can adjust as necessary
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 01 Apr 2010 14:44:46 -0700
+
+pr2-environment (0.2.7-precise) stable; urgency=low
+
+  * Incrementing to SVN: r742
+   - r742: Getting fixbios to respect /netboot file
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 01 Apr 2010 14:34:14 -0700
+
+pr2-environment (0.2.6-precise) stable; urgency=low
+
+  * Incrementing to SVN: r737
+   - r737: Fixing bios script
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 01 Apr 2010 11:54:25 -0700
+
+pr2-environment (0.2.5-precise) stable; urgency=low
+
+  * Incrementing to SVN: r736
+   - r720: Adding instructions to fix the removable drive
+   - r736: Fix bioses on boot
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 01 Apr 2010 09:57:36 -0700
+
+pr2-environment (0.2.4-precise) stable; urgency=low
+
+  * Incrementing to SVN: r708
+   - r708: Fixing pr2-brand
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 22 Mar 2010 10:44:47 -0700
+
+pr2-environment (0.2.3-precise) stable; urgency=low
+
+  * Incrementing to SVN: r705
+   - r705: Switching brand to separate robot, master, and slave names
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Sun, 21 Mar 2010 13:03:38 -0700
+
+pr2-environment (0.2.2-precise) stable; urgency=low
+
+  * Incrementing to SVN: r701
+   - r701: Defaulting pr2admin password to willow
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 19 Mar 2010 17:27:29 -0700
+
+pr2-environment (0.2.1-precise) stable; urgency=low
+
+  * Incrementing to SVN: r697
+   - r695: Adding prosicilica powerpowerboard check script for #4043
+   - r697: Moving creation of the pr2admin user
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 19 Mar 2010 13:20:43 -0700
+
+pr2-environment (0.2.0-precise) stable; urgency=low
+
+  * Incrementing to SVN: r682
+   - r674: Removing - from pr2-admin for consistency
+   - r676: Allow stuff relative to machine 2 to fail during brandin
+   - r682: Adding connection timeouts to pr2-brand
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 11 Mar 2010 20:23:43 -0800
+
+pr2-environment (0.1.50-precise) stable; urgency=low
+
+  * Incrementing to SVN: r618
+   - r618: Making ps3joy restart work if ps3joy is down
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 05 Feb 2010 13:02:35 -0800
+
+pr2-environment (0.1.49-precise) stable; urgency=low
+
+  * Incrementing to SVN: r615
+   - r612: Removing user configuration stuff moved to pr2-users
+   - r615: Moving pr2-webui dependency from core to environment
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 05 Feb 2010 11:07:02 -0800
+
+pr2-environment (0.1.48-precise) stable; urgency=low
+
+  * Incrementing to SVN: r605
+   - r592: Activated lan1 on both computers on the 10.69.0.x subnet.
+   - r597: Setting hostname for mail when branding.
+   - r603: Putting motd back in etc so that it is shared across the 2 robots.
+   - r605: Added inactivity timeout to ps3joy init.d script.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 01 Feb 2010 13:49:57 -0800
+
+pr2-environment (0.1.47-precise) stable; urgency=low
+
+  * Incrementing to SVN: r588
+   - r588: Allowing sudoers to run /pr2bin/apt-get so they get the right error message
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 25 Jan 2010 14:34:47 -0800
+
+pr2-environment (0.1.46-precise) stable; urgency=low
+
+  * Incrementing to SVN: r578
+   - r578: Populating /etc/ros/env/ROBOT_NAME from the branding script
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 20 Jan 2010 13:41:14 -0800
+
+pr2-environment (0.1.45-precise) stable; urgency=low
+
+  * Incrementing to SVN: r574
+   - r574: Added asound.conf file so that the sound_play node hase better chances of finding the sound card.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 19 Jan 2010 15:58:22 -0800
+
+pr2-environment (0.1.44-precise) stable; urgency=low
+
+  * Incrementing to SVN: r566
+   - r566: Source /etc/ros/setup.bash from the skel bashrc
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 19 Jan 2010 14:26:18 -0800
+
+pr2-environment (0.1.43-precise) stable; urgency=low
+
+  * Incrementing to SVN: r564
+   - r561: Decreasing tolerance on time synchronization a little
+   - r564: Adding a tcpdump-based monitor for dhcp to get to the bottom of powerboard stuff.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 18 Jan 2010 14:16:14 -0800
+
+pr2-environment (0.1.42-precise) stable; urgency=low
+
+  * Incrementing to SVN: r560
+   - r560: Adding more scripts to pr2-systemcheck.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 18 Jan 2010 12:11:08 -0800
+
+pr2-environment (0.1.41-precise) stable; urgency=low
+
+  * Incrementing to SVN: r540
+   - r540: Expanding sudoers for robot command to all sub-commands
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 12 Jan 2010 16:41:12 -0800
+
+pr2-environment (0.1.40-precise) stable; urgency=low
+
+  * Incrementing to SVN: r535
+   - r535: adding robot reset to sudoers
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Sat, 09 Jan 2010 18:51:59 -0800
+
+pr2-environment (0.1.39-precise) stable; urgency=low
+
+  * Incrementing to SVN: r530
+   - r530: Fixing etc/skel which was being botched by diversion rules.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 08 Jan 2010 18:00:57 -0800
+
+pr2-environment (0.1.38-precise) stable; urgency=low
+
+  * Incrementing to SVN: r518
+   - r518: Removing debug statement from openvpn script
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 07 Jan 2010 17:06:07 -0800
+
+pr2-environment (0.1.37-precise) stable; urgency=low
+
+  * Incrementing to SVN: r516
+   - r490: Adding some more sudoers nopasswd invocations
+   - r491: Adding aptitude to the apt group
+   - r493: Added script to check that wge100 cameras are present and up to date
+   - r494: Added line to source the ros configuration in checkwge100.sh
+   - r496: Added script to check the projector firmware version. Tweaked the wge100 firmware version check.
+   - r498: Solving the vpnrouting persistant connection issue.
+   - r509: Changing ps3joy to use /etc/ros
+   - r510: Moving /etc/pr2/sensors to /etc/ros/sensors
+   - r511: Setting up proper whitelisting for /etc/ros/sensors
+   - r512: Changing uses of /etc/pr2 to /etc/ros
+   - r514: Fixing skipped returncodes in systemcheck
+   - r515: Fixing sudoers file
+   - r516: Stop pushing ip rules to slave.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 07 Jan 2010 14:42:42 -0800
+
+pr2-environment (0.1.36-precise) stable; urgency=low
+
+  * Incrementing to SVN: r475
+   - r475: Adding pr2-bios-bmc dependency
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 31 Dec 2009 12:29:52 -0800
+
+pr2-environment (0.1.35-precise) stable; urgency=low
+
+  * Incrementing to SVN: r469
+   - r469: Disabling host-based authentication on the robot.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 31 Dec 2009 10:58:43 -0800
+
+pr2-environment (0.1.34-precise) stable; urgency=low
+
+  * Incrementing to SVN: r467
+   - r467: Fixing ps3joy
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 30 Dec 2009 01:06:13 -0800
+
+pr2-environment (0.1.33-precise) stable; urgency=low
+
+  * Incrementing to SVN: r460
+   - r460: New start/stop beeping
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 29 Dec 2009 22:57:51 -0800
+
+pr2-environment (0.1.32-precise) stable; urgency=low
+
+  * Incrementing to SVN: r454
+   - r447: Adding more dependencies for pr2-environment
+   - r448: Adding dependency on ros-latest-all
+   - r454: adding dependency on pr2-core
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 29 Dec 2009 21:15:48 -0800
+
+pr2-environment (0.1.31-precise) stable; urgency=low
+
+  * Incrementing to SVN: r419
+   - r419: Add apt into the extra default groups for now.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 23 Dec 2009 13:49:20 -0800
+
+pr2-environment (0.1.30-precise) stable; urgency=low
+
+  * Incrementing to SVN: r415
+   - r415: Making check-ssh-keys not run quietly so that a user knows what's happening.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 17 Dec 2009 23:05:21 -0800
+
+pr2-environment (0.1.29-precise) stable; urgency=low
+
+  * Incrementing to SVN: r414
+   - r411: Populating some files in /etc/ros/ from the pr2-brand script.
+   - r414: Causing a users ssh keys to get checked when they log in.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 17 Dec 2009 22:57:17 -0800
+
+pr2-environment (0.1.28-precise) stable; urgency=low
+
+  * Incrementing to SVN: r394
+   - r393: Adding removable disk to pr2-environment.
+   - r394: Fixing postrm script.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 11 Dec 2009 14:16:43 -0800
+
+pr2-environment (0.1.27-precise) stable; urgency=low
+
+  * Incrementing to SVN: r389
+   - r389: Adding hourly job to zip bags.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 08 Dec 2009 19:08:37 -0800
+
+pr2-environment (0.1.26-precise) stable; urgency=low
+
+  * Incrementing to SVN: r387
+   - r387: Allowing users to stop/start/restart joystick for now.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 08 Dec 2009 13:13:03 -0800
+
+pr2-environment (0.1.25-precise) stable; urgency=low
+
+  * Incrementing to SVN: r386
+   - r386: Adding a pr2-admin group with permissions to modify /etc/pr2
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 08 Dec 2009 12:59:02 -0800
+
+pr2-environment (0.1.24-precise) stable; urgency=low
+
+  * Incrementing to SVN: r385
+   - r385: Allowing all users to run pr2-shutdown
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 08 Dec 2009 11:41:50 -0800
+
+pr2-environment (0.1.23-precise) stable; urgency=low
+
+  * Incrementing to SVN: r383
+   - r381: Creating a deb for ckill.
+   - r382: Allowing all users to sudo ckill kill
+   - r383: Adding dependency on pr2-ckill
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 08 Dec 2009 11:22:44 -0800
+
+pr2-environment (0.1.22-precise) stable; urgency=low
+
+  * Incrementing to SVN: r377
+   - r377: Using different syntax for snmpd logfile limiting.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 04 Dec 2009 03:12:17 -0800
+
+pr2-environment (0.1.21-precise) stable; urgency=low
+
+  * Incrementing to SVN: r376
+   - r376: Changing default snmpd logging level
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 04 Dec 2009 02:45:55 -0800
+
+pr2-environment (0.1.20-precise) stable; urgency=low
+
+  * Incrementing to SVN: r372
+   - r371: Adding rsync server for hwlog to pr2-environment.
+   - r372: Enabling distcc as part of pr2-environment.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 04 Dec 2009 01:26:07 -0800
+
+pr2-environment (0.1.19-precise) stable; urgency=low
+
+  * Incrementing to SVN: r369
+   - r369: Adding dependency of pr2-stress on pr2-environment.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Fri, 04 Dec 2009 01:02:46 -0800
+
+pr2-environment (0.1.18-precise) stable; urgency=low
+
+  * Incrementing to SVN: r350
+   - r349: Keeping pr2-brand from breaking the diversion for /etc/hosts
+   - r350: Adding apt group for users to run apt-get / apt-cache
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 30 Nov 2009 20:21:39 -0800
+
+pr2-environment (0.1.17-precise) stable; urgency=low
+
+  * Incrementing to SVN: r348
+   - r348: Adding ps3joy launch script to pr2-environment
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 30 Nov 2009 19:08:46 -0800
+
+pr2-environment (0.1.16-precise) stable; urgency=low
+
+  * Incrementing to SVN: r346
+   - r346: Fixing the checksensors.sh scripts.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 30 Nov 2009 17:45:54 -0800
+
+pr2-environment (0.1.15-precise) stable; urgency=low
+
+  * Incrementing to SVN: r345
+   - r345: Adding pr2-systemcheck dependency and some simple test scripts to pr2-environment.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Mon, 30 Nov 2009 17:41:01 -0800
+
+pr2-environment (0.1.14-precise) stable; urgency=low
+
+  * Incrementing to SVN: r338
+   - r337: Adding eml dependency to pr2-environment.
+   - r338: Changing eml dependency to pr2-eml
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 25 Nov 2009 17:55:53 -0800
+
+pr2-environment (0.1.13-precise) stable; urgency=low
+
+  * Incrementing to SVN: r335
+   - r335: Adding pr2-environment dependency on pr2-grant
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 25 Nov 2009 17:47:14 -0800
+
+pr2-environment (0.1.12-precise) stable; urgency=low
+
+  * Incrementing to SVN: r322
+   - r309: Moved c2 hostname set later in pr2-brand script.
+   - r312: Redid beeps so that computer 2 is more readily identifiable, and so that all the code lives in a single file.
+   - r315: Fixing makesensorlinks so it works if devices aren't present.
+   - r322: Adding powerboard to dnsmasq.d on robot.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 24 Nov 2009 13:48:43 -0800
+
+pr2-environment (0.1.11-precise) stable; urgency=low
+
+  * Incrementing to SVN: r307
+   - r307: Adding c1 and c2 into the ssh known_hosts file.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 19 Nov 2009 16:14:17 -0800
+
+pr2-environment (0.1.10-precise) stable; urgency=low
+
+  * Incrementing to SVN: r306
+   - r306: Fixing pr2-environment postinstall that adds ssh keys for root.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 19 Nov 2009 16:02:11 -0800
+
+pr2-environment (0.1.9-precise) stable; urgency=low
+
+  * Incrementing to SVN: r305
+   - r304: Fixing host-based authentication.
+   - r305: pr2-environment now creates ssh keys for root account if necessary
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 19 Nov 2009 15:38:30 -0800
+
+pr2-environment (0.1.8-precise) stable; urgency=low
+
+  * Incrementing to SVN: r303
+   - r297: Keeping the branding script from mangling the basestation comment.
+   - r301: Adding configuration of host-based authentication to branding script
+   - r302: Switching makesensorlinks.sh to be a shell script instead of a bash script.
+   - r303: Adding usage instructions to pr2-brand script.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 19 Nov 2009 13:03:53 -0800
+
+pr2-environment (0.1.7-precise) stable; urgency=low
+
+  * Incrementing to SVN: r295
+   - r295: Adding UseDNS no to ssh/sshd_config.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 18 Nov 2009 11:58:07 -0800
+
+pr2-environment (0.1.6-precise) stable; urgency=low
+
+  * Incrementing to SVN: r292
+   - r292: Fixing typo in pr2-brand script.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 18 Nov 2009 11:02:13 -0800
+
+pr2-environment (0.1.5-precise) stable; urgency=low
+
+  * Incrementing to SVN: r282
+   - r282: Removing readme from pr2bin in pr2-environment.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 18 Nov 2009 08:27:38 -0800
+
+pr2-environment (0.1.4-precise) stable; urgency=low
+
+  * Incrementing to SVN: r276
+   - r262: Changing pr2 branding script to modify hosts rather than overwriting it.
+   - r265: Moving pr2-usermigrate and useradd from pr2-netboot into pr2-environment.
+   - r268: Moving around pr2deb dependencies for pr2-pr2bin package.
+   - r269: moving pr2-usermigrate into pr2bin
+   - r270: Adding initscript to automatically create default sensor links if possible.
+   - r276: environment and login.defs have moved to pr2-pr2bin
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Tue, 17 Nov 2009 13:29:29 -0800
+
+pr2-environment (0.1.3-precise) stable; urgency=low
+
+  * Incrementing rev to see how dependency changes track.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Thu, 05 Nov 2009 10:45:14 -0800
+
+pr2-environment (0.1.2-precise) stable; urgency=low
+
+  * Incrementing to SVN: r243
+   - r243: Adding a script which fixes ipmi at boot if necessary.
+
+ -- Jeremy Leibs <leibs@willowgarage.com>  Wed, 04 Nov 2009 13:43:11 -0800
+
+pr2-environment (0.1.1-precise) stable; urgency=low
+
+  * Incrementing to SVN: r218
+   - r210: pr2 branding script for setting name of robots
+   - r211: Added a script that touches /fastboot at end of boot. Haven't tested that this actually solves the startup fsck problem.
+   - r215: Fixing some checks in the install scripts.
+   - r216: Added beeps during startup and shutdown.
+   - r217: Fixed startup/shutdown beeps. They should work now.
+   - r218: Made start boot beep work by moving it to S19 after proc and devfs are up.
+
+ -- Blaise Gassend <blaise@willowgarage.com>  Mon, 02 Nov 2009 12:03:38 -0800
+
+pr2-environment (0.1-precise) stable; urgency=low
+
+  * Initial release. 
+  * Creating the package
+
+ -- Blaise Gassend <blaise@willowgarage.com>  Thu, 16 Jul 2009 00:56:37 -0700

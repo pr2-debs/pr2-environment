@@ -1,0 +1,104 @@
+#!/bin/sh
+set -e
+
+PKG=pr2-environment
+
+#DEBHELPER#
+
+case "$1" in
+  configure)
+
+    chown -R root.rosadmin /etc/ros
+    chmod -R g+w /etc/ros
+
+    ucfr pr2-environment /etc/sudoers
+    ucf /usr/share/pr2-environment/sudoers /etc/sudoers
+    chmod 0440 /etc/sudoers
+
+    cp /etc/skel.pr2-environment/.bashrc /etc/skel/
+
+    id pr2admin >/dev/null 2>&1 || adduser pr2admin --disabled-password -quiet --gecos "" || :
+    usermod -a -G admin pr2admin
+
+    grep -q "^ipmi_devintf" /etc/modules || echo ipmi_devintf >> /etc/modules
+    grep -q "^ipmi_si" /etc/modules || echo ipmi_si >> /etc/modules
+    grep -q "^snd_pcm_oss" /etc/modules || echo snd_pcm_oss >> /etc/modules
+    grep -q "^snd_seq_oss" /etc/modules || echo snd_seq_oss >> /etc/modules
+    grep -q "^pcspkr" /etc/modules || echo pcspkr >> /etc/modules
+
+    chown root:users /hwlog
+    chmod g+w /hwlog
+
+    if [ -e /etc/init.d/fixbios.sh ]; then
+      update-rc.d -f fixbios.sh remove
+      update-rc.d fixbios.sh start 02 S . stop 00 0 6 .
+    fi
+    
+    if [ -e /etc/init.d/startbootbeep.sh ]; then
+      update-rc.d -f startbootbeep.sh remove
+      update-rc.d startbootbeep.sh start 19 S .
+    fi
+    
+    if [ -e /etc/init.d/endbootstartshutdownbeep.sh ]; then
+      update-rc.d -f endbootstartshutdownbeep.sh remove
+      update-rc.d endbootstartshutdownbeep.sh start 99 1 2 3 4 5 . stop 00 0 6 .
+    fi
+    
+    if [ -e /etc/init.d/endshutdownbeep.sh ]; then
+      update-rc.d -f endshutdownbeep.sh remove
+      update-rc.d endshutdownbeep.sh start 80 0 6 .
+    fi
+
+    if [ -e /etc/init.d/fixipmi.sh ]; then
+      update-rc.d fixipmi.sh start 22 2 .
+    fi
+
+    if [ -e /etc/init.d/ps3joy ]; then
+      update-rc.d -f ps3joy remove
+      update-rc.d ps3joy start 26 2 3 4 5 . stop 74 0 1 6 .
+      invoke-rc.d ps3joy start || true
+    fi
+
+    if [ -e /etc/init.d/rsync ]; then
+      invoke-rc.d rsync start || true
+    fi
+
+    # Create a key for root if there isn't one already
+    if [ ! -e /root/.ssh/id_rsa.pub ]; then
+      yes | ssh-keygen -q -f /root/.ssh/id_rsa -N ""
+    fi
+    
+    # Add root to its authorized_keys file if not already there
+    if [ -e /root/.ssh/authorized_keys ]; then
+      count=`grep -c -f /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys || true`
+      if [ $count -eq 0 ]; then
+            cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
+      fi
+    else
+      cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
+    fi
+
+    # /etc/default/grub is already owned by grub-pc; don't register with ucfr
+    ucf --three-way /usr/share/grub/default/grub /etc/default/grub
+    /usr/sbin/update-grub2
+
+    # Allow all users to write to motor model directory
+    mkdir -p /var/lib/motor_heating_model
+    chmod ug+rwx -R /var/lib/motor_heating_model
+    chgrp -R users /var/lib/motor_heating_model
+
+    # create rosget group
+    if ! getent group rosget >/dev/null 2>&1
+    then
+       addgroup rosget
+    fi
+
+    ;;
+
+  *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 0
+    ;;
+esac
+
+

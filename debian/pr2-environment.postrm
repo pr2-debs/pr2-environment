@@ -1,0 +1,22 @@
+#!/bin/sh
+
+case "$1" in 
+  purge)
+    update-rc.d startbootbeep.sh remove
+    update-rc.d endbootstartshutdownbeep.sh remove
+    update-rc.d endshutdownbeep.sh remove
+    update-rc.d fixipmi.sh remove
+    update-rc.d ps3joy remove
+    update-rc.d dhcpmon remove
+
+    ucfr -p pr2-environment /etc/sudoers
+    ucf -p /etc/sudoers
+
+    ;;
+
+
+    *)
+    ;;
+esac
+
+#DEBHELPER#

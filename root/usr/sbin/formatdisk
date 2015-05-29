@@ -1,0 +1,96 @@
+#!/bin/sh
+
+FORCE=0
+
+while getopts ":f" opt; do
+  case $opt in
+    f)
+	  FORCE=1
+	  ;;
+  esac
+done
+shift `expr $OPTIND - 1`
+
+
+# Verify that we are actually the root user.
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+fi
+
+# Make sure a disk has been specified
+DISK=`readlink -f $1`
+if [ -z "$DISK" ]; then
+    echo "No disk specified.  This should usually be [/dev/sda or /dev/removable]" 1>&2
+    exit 1
+fi
+
+
+
+# Make sure we don't accidentally wipe the disk on the master machine (10.68.0.1)
+NET="10.68.0.[2-9][^0-9]"
+IP=`ip addr show | grep $NET | sed -e s'/^.*inet //' |sed -e s'/\/[0-9]* brd.*$//'`
+if [ -z $IP ]; then
+    if [ ${DISK} = "/dev/sda" ]; then
+	echo "This system is configured as a master. It is unlikely you want to format the primary disk." 1>&2
+	exit 1
+    fi
+fi
+
+# Check that the device actually exists
+if [ ! -e $DISK ]; then
+    echo "No device named: [${DISK}]" 1>&2
+    exit 1
+fi
+
+echo "Old partition table for $(hostname):$DISK:"
+parted -s -- $DISK print
+
+echo "Erase all data on $(hostname):${DISK} and repartition? (y/n)"
+
+if [ $FORCE -eq 0 ]; then
+    read WISH
+
+    if [ "$WISH" != "y" ]; then
+	echo "Aborting..."
+	exit 0
+    fi
+fi
+
+# Wipe the MBR (Master Boot Record) clean.
+echo "Wiping the MBR..."
+echo "dd if=/dev/zero of=$DISK bs=512 count=1"
+dd if=/dev/zero of=$DISK bs=512 count=1
+
+# Create disk label.  This ensures that all remnants of the old label, whatever
+# type it was, are removed and that we're starting with a clean label.
+echo "Creating a disk label..."
+echo "parted -s -- $DISK mklabel msdos"
+parted -s -- $DISK mklabel msdos
+
+DISK_SIZE=`parted -s $DISK unit MB print | grep "Disk $DISK" | sed 's/^.*:\s\([0-9]*\)MB/\1/g'`
+echo "Disk has ${DISK_SIZE} MB"
+
+# This is copied from systemimager
+if [ "$ARCH" = "alpha" ]; then
+    END_OF_LAST_PRIMARY=1
+else
+    END_OF_LAST_PRIMARY=0
+fi
+
+START_MB=$END_OF_LAST_PRIMARY
+END_MB=$(( $DISK_SIZE - 0 ))
+
+echo "Creating partition ${DISK}1..."
+echo "parted -s -- $DISK mkpart primary $START_MB $END_MB"
+parted -s -- $DISK mkpart primary $START_MB $END_MB
+
+echo "New partitiona table for $DISK0:"
+echo "parted -s -- $DISK print"
+parted -s -- $DISK print
+
+echo "Creating filesystem on partition"
+echo "mkfs.ext4 ${DISK}1"
+mkfs.ext4 ${DISK}1
+
+# Do something here to recreate new user directories as necessary.

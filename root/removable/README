@@ -1,0 +1,11 @@
+This is the location where the removable disk can be mounted.
+
+If you can see this file it's not mounted.
+
+To mount:
+
+mount /removable
+
+To unmount:
+
+umount /removable

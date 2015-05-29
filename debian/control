@@ -1,0 +1,14 @@
+Source: pr2-environment
+Section: pr2/config
+Priority: extra
+Essential: yes
+Maintainer: Austin Hendrix <ahendrix@willowgarge.com>
+Build-Depends: debhelper (>= 9), config-package-dev (>= 4.5~)
+Standards-Version: 3.7.2
+
+Package: pr2-environment
+Essential: yes
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, emacs, screen, vim, dnsmasq, portmap, netperf, hddtemp, lm-sensors, ipmitool, zsh, ifplugd, wg-openvpn, syslinux, atftpd, chrony, gdb, subversion, debhelper, config-package-dev, fakeroot, pr2-udev, pr2-netboot, pr2-timesync, pr2-network, pr2-ctr350, pr2-wrt610n, tcsh, snmpd, snmp, distcc, ckermit, libcap2-dev, beep, python-svn, openssh-server, pr2-grant, pr2-systemcheck, pr2-stress, pr2-ckill, postfix, smartmontools, pr2-repo, ros-repo, pr2-core, pr2-bios-bmc-images, pr2-users, bluez-hcidump, python-bluez (>= 0.18), pr2-sendhwlog, libsdl1.2debian, pr2-netconsole, pr2-repo-pr2, pr2-webui, pr2-sysros, gstreamer0.10-alsa, pr2-kernel, grub2-common
+Description: Installs packages that you typically want installed on the PR2.
+Conflicts: ${diverted-files}, apparmor

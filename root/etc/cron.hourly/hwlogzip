@@ -1,0 +1,8 @@
+#!/bin/sh
+
+[ `id -u` = '0' ] || {
+    echo "Can only run as root"
+    exit 1
+}
+
+/usr/bin/sendhwlog --stageonly

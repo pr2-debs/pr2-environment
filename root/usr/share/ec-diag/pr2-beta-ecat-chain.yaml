@@ -1,0 +1,158 @@
+devices:
+  wg005: &wg005
+    fw: ['1.21', '1.22']
+    pcb: [F.2, F.3]
+    product: 6805005
+  wg006: &wg006
+    fw: ['1.01', '1.02', '2.208']
+    pcb: [E.0, E.1]
+    product: 6805006
+  wg021: &wg021
+    fw: ['1.11', '1.12', '1.14']
+    pcb: [B.0, B.1]
+    product: 6805021
+  wg014: &wg014
+    pcb: B.2
+    product: 6805014
+tree:
+  actuator: Hub
+  note: base
+  <<: *wg014
+  J1: UPLINK
+  J2:
+    actuator: fr_caster_r_wheel_motor
+    <<: *wg005
+    p0: UPLINK
+    p1:
+      actuator: fr_caster_l_wheel_motor
+      <<: *wg005
+      p0: UPLINK
+      p1: 
+        actuator: fr_caster_rotation_motor
+        <<: *wg005
+        p0: UPLINK
+  J3:
+    actuator: torso_lift_motor
+    <<: *wg005
+    p0: UPLINK
+    p1:
+      actuator: Hub
+      note: head
+      <<: *wg014
+      J1: UPLINK
+      J2:
+        actuator: head_tilt_motor
+        <<: *wg005
+        p0: UPLINK
+        p1: 
+          actuator: led_projector
+          <<: *wg021
+          p0: UPLINK
+      J3:
+        actuator: laser_tilt_mount_motor
+        <<: *wg005
+        p0: UPLINK
+      J4:
+        actuator: head_pan_motor
+        <<: *wg005
+        p0: UPLINK
+      J5:
+        actuator: r_shoulder_pan_motor
+        <<: *wg005
+        p0: UPLINK
+        p1:
+          actuator: r_shoulder_lift_motor
+          <<: *wg005
+          p0: UPLINK
+          p1:
+            actuator: r_upper_arm_roll_motor
+            <<: *wg005
+            p0: UPLINK
+            p1:
+              actuator: r_elbow_flex_motor
+              <<: *wg005
+              p0: UPLINK
+              p1:
+                actuator: r_forearm_roll_motor
+                <<: *wg005
+                p0: UPLINK
+                p1:
+                  actuator: r_wrist_l_motor
+                  <<: *wg005
+                  p0: UPLINK
+                  p1:
+                    actuator: r_wrist_r_motor
+                    <<: *wg005
+                    p0: UPLINK
+                    p1: 
+                      actuator: r_gripper_motor
+                      <<: *wg006
+                      p0: UPLINK
+      J6:
+        actuator: l_shoulder_pan_motor
+        <<: *wg005
+        p0: UPLINK
+        p1:
+          actuator: l_shoulder_lift_motor
+          <<: *wg005
+          p0: UPLINK
+          p1:
+            actuator: l_upper_arm_roll_motor
+            <<: *wg005
+            p0: UPLINK
+            p1:
+              actuator: l_elbow_flex_motor
+              <<: *wg005
+              p0: UPLINK
+              p1:
+                actuator: l_forearm_roll_motor
+                <<: *wg005
+                p0: UPLINK
+                p1:
+                  actuator: l_wrist_l_motor
+                  <<: *wg005
+                  p0: UPLINK
+                  p1:
+                    actuator: l_wrist_r_motor
+                    <<: *wg005
+                    p0: UPLINK
+                    p1: 
+                      actuator: l_gripper_motor
+                      <<: *wg006
+                      p0: UPLINK
+  J4:
+    actuator: fl_caster_r_wheel_motor
+    <<: *wg005
+    p0: UPLINK
+    p1:
+      actuator: fl_caster_l_wheel_motor
+      <<: *wg005
+      p0: UPLINK
+      p1: 
+        actuator: fl_caster_rotation_motor
+        <<: *wg005
+        p0: UPLINK
+  J5:
+    actuator: bl_caster_r_wheel_motor
+    <<: *wg005
+    p0: UPLINK
+    p1:
+      actuator: bl_caster_l_wheel_motor
+      <<: *wg005
+      p0: UPLINK
+      p1: 
+        actuator: bl_caster_rotation_motor
+        <<: *wg005
+        p0: UPLINK
+  J6:
+    actuator: br_caster_r_wheel_motor
+    <<: *wg005
+    p0: UPLINK
+    p1:
+      actuator: br_caster_l_wheel_motor
+      <<: *wg005
+      p0: UPLINK
+      p1: 
+        actuator: br_caster_rotation_motor
+        <<: *wg005
+        p0: UPLINK

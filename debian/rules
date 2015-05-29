@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_ALWAYS_EXCLUDE=CVS:.svn
+
+DEB_DIVERT_EXTENSION = .pr2-environment
+DEB_DIVERT_FILES_pr2-environment += \
+	/etc/default/snmpd.pr2-environment \
+	/etc/snmp/snmpd.conf.pr2-environment \
+	/etc/default/rsync.pr2-environment \
+	/etc/default/distcc.pr2-environment \
+	/etc/distcc/hosts.pr2-environment \
+	/etc/default/grub.pr2-environment \
+	/etc/ssh/sshd_config.pr2-environment \
+	/etc/ssh/ssh_config.pr2-environment \
+	/etc/bluetooth/main.conf.pr2-environment \
+	/etc/environment.pr2-environment \
+	/etc/lvm/lvm.conf.pr2-environment \
+   /usr/share/grub/default/grub.pr2-environment
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/config-package.mk
+
+

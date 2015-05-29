@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "/pr2bin/checksshkeys has been deprecated.  Please update your .bashrc to use /usr/bin/check-ssh-keys." >&2
+/usr/bin/check-ssh-keys

@@ -1,0 +1,3 @@
+ROS_MASTER_URI="http://c1:11311"
+ROBOT="pr2"
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"

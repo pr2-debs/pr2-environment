@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import subprocess
+
+_home = os.environ['HOME']
+
+if __name__ == '__main__':
+   if os.path.exists(_home + '/.ssh/id_rsa') and os.path.exists(_home + '/.ssh/id_rsa.pub') and os.path.exists(_home + '/.ssh/authorized_keys'):
+      keyfile = open(_home + '/.ssh/id_rsa.pub','r')
+      authfile = open(_home + '/.ssh/authorized_keys','r')
+      key = keyfile.read()
+      authkeys = authfile.read()
+      if key in authkeys:
+         sys.exit(0)
+   
+   yesno = raw_input("You don't appear to have your ssh keys setup.  Would you like to set them up now? [Y/n]")
+
+   if yesno.lower()=='y' or yesno == '':
+      if not os.path.exists(_home + '/.ssh/id_rsa.pub'):
+         gen = subprocess.Popen(['ssh-keygen', '-N', '', '-f', _home + '/.ssh/id_rsa'])
+         gen.wait()
+      keyfile = open(_home + '/.ssh/id_rsa.pub')
+      key = keyfile.read()
+      auth = open(_home + '/.ssh/authorized_keys','a')
+      auth.write('\n'+key)
+      print 'Try to ssh between the two robot machines to verify keys are setup properly.  You should not be prompted for a password.'
+   else:
+      print "If you don't want to see this message again, remove 'check-ssh-keys' from the top of your .bashrc file"

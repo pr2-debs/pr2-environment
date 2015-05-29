@@ -1,0 +1,40 @@
+# /etc/sudoers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# See the man page for details on how to write a sudoers file.
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# Defaults
+
+Defaults    !lecture,tty_tickets,!fqdn
+Defaults    env_keep+="ROS_ROOT ROS_PACKAGE_PATH ROS_MASTER_URI"
+
+# User privilege specification
+root    ALL=(ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Members of the apt group may install things
+%apt   ALL=(ALL) /usr/bin/apt-get, /usr/bin/apt-cache, /usr/bin/aptitude, /usr/bin/easy_install
+
+# All users can do some commands
+ALL ALL=(ALL) /usr/bin/pr2-systemcheck, /usr/sbin/pr2-shutdown, /etc/init.d/ps3joy start, /etc/init.d/ps3joy stop, /etc/init.d/ps3joy reset, /usr/bin/sendhwlog
+
+# The ros group can use ckill
+%ros   ALL=(ALL) NOPASSWD: /usr/bin/ckill
+# The sgid of the robot command does not trigger the above, so for now we grant all users ckill privileges
+ALL   ALL=(ALL) NOPASSWD: /usr/bin/ckill
+
+# These commands are needed by cpu_monitor.py in pr2_computer_monitor
+ALL ALL=NOPASSWD: /usr/bin/ipmitool sdr type Temperature, /usr/bin/ipmitool sdr, /usr/bin/ckill list, /usr/bin/robot, /usr/bin/nvidia-smi -a
+
+# roslaunch_ros can be run by anyone, but only as the ros user
+Runas_Alias  ROSUSER=ros
+ALL ALL = (ROSUSER) NOPASSWD: /usr/lib/robot/roslaunch_ros
+

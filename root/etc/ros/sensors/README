@@ -1,0 +1,2 @@
+This directory contains symlinks to sensors that should exist on c1.
+NOTE: The symlinks visible on c2 are in /unionfs/overlay/etc/ros/sensors
