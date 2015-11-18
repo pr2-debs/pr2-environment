@@ -26,8 +26,10 @@ case "$1" in
     grep -q "^snd_seq_oss" /etc/modules || echo snd_seq_oss >> /etc/modules
     grep -q "^pcspkr" /etc/modules || echo pcspkr >> /etc/modules
 
-    chown root:users /hwlog
-    chmod g+w /hwlog
+
+    # At present release of Trusty Indigo, hwlog is not used. 
+    #chown root:users /hwlog
+    #chmod g+w /hwlog
 
     if [ -e /etc/init.d/fixbios.sh ]; then
       update-rc.d -f fixbios.sh remove
