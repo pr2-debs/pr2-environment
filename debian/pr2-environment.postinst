@@ -31,10 +31,10 @@ case "$1" in
     #chown root:users /hwlog
     #chmod g+w /hwlog
 
-    if [ -e /etc/init.d/fixbios.sh ]; then
-      update-rc.d -f fixbios.sh remove
-      update-rc.d fixbios.sh start 02 S . stop 00 0 6 .
-    fi
+    #if [ -e /etc/init.d/fixbios.sh ]; then
+    #  update-rc.d -f fixbios.sh remove
+    #  update-rc.d fixbios.sh start 02 S . stop 00 0 6 .
+    #fi
     
     if [ -e /etc/init.d/startbootbeep.sh ]; then
       update-rc.d -f startbootbeep.sh remove
@@ -51,9 +51,9 @@ case "$1" in
       update-rc.d endshutdownbeep.sh start 80 0 6 .
     fi
 
-    if [ -e /etc/init.d/fixipmi.sh ]; then
-      update-rc.d fixipmi.sh start 22 2 .
-    fi
+    #if [ -e /etc/init.d/fixipmi.sh ]; then
+    #  update-rc.d fixipmi.sh start 22 2 .
+    #fi
 
     if [ -e /etc/init.d/ps3joy ]; then
       update-rc.d -f ps3joy remove
