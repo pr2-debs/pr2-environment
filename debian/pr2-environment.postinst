@@ -58,12 +58,11 @@ case "$1" in
     # Otherwise get permission error on sixad
     chmod 777 /etc/init.d/sixad
 
-    # PS3Joy no longer used in trusty, sixad instead.
-    #if [ -e /etc/init.d/ps3joy ]; then
-    #  update-rc.d -f ps3joy remove
-    #  update-rc.d ps3joy start 26 2 3 4 5 . stop 74 0 1 6 .
-    #  invoke-rc.d ps3joy start || true
-    #fi
+    if [ -e /etc/init.d/ps3joy ]; then
+      update-rc.d -f ps3joy remove
+      update-rc.d ps3joy start 26 2 3 4 5 . stop 74 0 1 6 .
+      invoke-rc.d ps3joy start || true
+    fi
 
     if [ -e /etc/init.d/rsync ]; then
       invoke-rc.d rsync start || true
