@@ -35,6 +35,12 @@ case "$1" in
     #  update-rc.d -f fixbios.sh remove
     #  update-rc.d fixbios.sh start 02 S . stop 00 0 6 .
     #fi
+
+    if [ -e /etc/init.d/sixad ]; then
+      update-rc.d -f sixad remove
+      update-rc.d sixad start
+      echo "Added Sixad to boot process"
+    fi
     
     if [ -e /etc/init.d/startbootbeep.sh ]; then
       update-rc.d -f startbootbeep.sh remove
