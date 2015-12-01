@@ -104,3 +104,6 @@ fi
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+
+# automatically export the ROS_ENV_LOADER, or set a default for it.
+export ROS_ENV_LOADER=/etc/ros/env.sh
