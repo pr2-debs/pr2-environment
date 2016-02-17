@@ -14,12 +14,15 @@ case "$1" in
     ucfr pr2-environment /etc/sudoers
     ucf /usr/share/pr2-environment/sudoers /etc/sudoers
     chmod 0440 /etc/sudoers
-    chmod 0755 /var/run/sshd
 
     cp /etc/skel.pr2-environment/.bashrc /etc/skel/
 
     id pr2admin >/dev/null 2>&1 || adduser pr2admin --disabled-password -quiet --gecos "" || :
     usermod -a -G admin pr2admin
+
+
+    # Setup the symlinks to /dev/sensors/ps3joy and /dev/sensors/imu
+    sudo ln -s 
 
     grep -q "^ipmi_devintf" /etc/modules || echo ipmi_devintf >> /etc/modules
     grep -q "^ipmi_si" /etc/modules || echo ipmi_si >> /etc/modules
