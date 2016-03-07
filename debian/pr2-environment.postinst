@@ -104,6 +104,10 @@ case "$1" in
     chmod ug+rwx -R /var/lib/motor_heating_model
     chgrp -R users /var/lib/motor_heating_model
 
+    # Change permissions on bluetooth module for new servers
+    sudo chmod +x /usr/sbin/bluetoothd
+
+
     # create rosget group
     if ! getent group rosget >/dev/null 2>&1
     then
