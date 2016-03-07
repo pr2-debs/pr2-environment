@@ -1,8 +1,8 @@
 # If you change this file, run 'update-grub' afterwards to update
 # /boot/grub/grub.cfg.
 
-GRUB_DEFAULT="Ubuntu, with Linux 3.4.28.rt40-1-pr2-rt"
-
+#GRUB_DEFAULT="Advanced options for Ubuntu>Ubuntu, with Linux 3.18.7-rt1"
+GRUB_DEFAULT="Advanced options for Ubuntu>Ubuntu, with Linux 3.19.0-49-lowlatency"
 GRUB_HIDDEN_TIMEOUT=0
 GRUB_HIDDEN_TIMEOUT_QUIET=true
 GRUB_TIMEOUT=10
