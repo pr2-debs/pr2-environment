@@ -114,6 +114,9 @@ case "$1" in
        addgroup rosget
     fi
 
+    # Update grub
+    sudo grub-set-default "Ubuntu, with Linux 3.19.0-49-lowlatency"
+
     ;;
 
   *)
