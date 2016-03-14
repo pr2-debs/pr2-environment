@@ -2,7 +2,7 @@
 # /boot/grub/grub.cfg.
 
 #GRUB_DEFAULT="Advanced options for Ubuntu>Ubuntu, with Linux 3.18.7-rt1"
-GRUB_DEFAULT="Advanced options for Ubuntu>Ubuntu, with Linux 3.19.0-49-lowlatency"
+GRUB_DEFAULT="Ubuntu, with Linux 3.19.0-49-lowlatency"
 GRUB_HIDDEN_TIMEOUT=0
 GRUB_HIDDEN_TIMEOUT_QUIET=true
 GRUB_TIMEOUT=10
