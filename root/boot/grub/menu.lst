@@ -1,0 +1,6 @@
+title           Ubuntu, with Linux 3.19.0-49-lowlatency
+root            (hd0,0)
+kernel          /boot/vmlinuz-3.19.0-49-lowlatency root=/dev/hda1 ro vga=normal console=tty0 console=prolific,115200n8
+initrd          /boot/initrd.img-3.19.0-49-lowlatency
+savedefault
+boot
