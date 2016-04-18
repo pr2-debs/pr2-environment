@@ -107,8 +107,13 @@ case "$1" in
     # create rosget group
     if ! getent group rosget >/dev/null 2>&1
     then
-       addgroup rosget
+      addgroup rosget
     fi
+
+    if [ -e ‘/dev/prolific’ ]; then
+      start prolific
+      echo "Started serial console on /dev/prolific"
+    fi	
 
     ;;
 
