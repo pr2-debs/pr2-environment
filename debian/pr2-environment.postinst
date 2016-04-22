@@ -104,6 +104,10 @@ case "$1" in
     chmod ug+rwx -R /var/lib/motor_heating_model
     chgrp -R users /var/lib/motor_heating_model
 
+    # Change permissions on bluetooth module for new servers
+    sudo chmod +x /usr/sbin/bluetoothd
+
+
     # create rosget group
     if ! getent group rosget >/dev/null 2>&1
     then
@@ -114,6 +118,9 @@ case "$1" in
       start prolific
       echo "Started serial console on /dev/prolific"
     fi	
+
+    # Update grub
+    sudo grub-set-default "Ubuntu, with Linux 3.19.0-49-lowlatency"
 
     ;;
 

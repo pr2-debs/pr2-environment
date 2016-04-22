@@ -7,7 +7,7 @@ if [ ${space} -ge 90 ]; then
     exit 1
 fi
 
-mount | grep -q " on /home" || {
+mount | grep -q " on /" || {
     echo "Home is not mounted.  Check that the disks are set up correctly" >&2
     exit 1
 }
