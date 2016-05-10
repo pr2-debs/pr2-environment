@@ -1,7 +1,7 @@
 #!/bin/sh
 
 res=0
-for device in battery0 battery1 battery2 battery3 ps3joy base_hokuyo tilt_hokuyo; do
+for device in battery0 battery1 battery2 battery3 base_hokuyo tilt_hokuyo; do
     if [ -e /etc/ros/sensors/${device} ]; then
 	echo "Link for /etc/ros/sensors/${device} is valid"
     else
